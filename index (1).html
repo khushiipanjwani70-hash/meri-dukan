@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f766e">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<title>Meri Dukan</title>
+</head>
+<body>
+<header>
+  <h1>Meri Dukan</h1>
+  <p id="date"></p>
+  <small>Likho Ek Baar, Hisab Khud Hoga.</small>
+</header>
+<main>
+  <section class="entry">
+    <textarea id="box" rows="4" placeholder="Yahan Likhein... jaise: Aaj 5 doodh packet 100 rupay per packet beche"></textarea>
+    <button id="save" class="big">Hisab Save Karein</button>
+    <div id="card" hidden></div>
+  </section>
+  <section id="k" class="grid"></section>
+  <section id="low"></section>
+  <section>
+    <h2>Recent Hisab</h2>
+    <ul id="recent"></ul>
+  </section>
+</main>
+<nav>
+  <button data-s="stock">Stock</button>
+  <button data-s="udhaar">Udhaar</button>
+  <button data-s="report">Hisab</button>
+  <button data-s="settings">Setting</button>
+</nav>
+<div id="sheet" hidden>
+  <div class="panel">
+    <button id="close" class="ghost">Band Karein</button>
+    <div id="sbody"></div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
